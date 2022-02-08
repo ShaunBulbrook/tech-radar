@@ -15,7 +15,8 @@
     "start": "cypress open --env host=$TEST_URL",
     "coverage": "nyc npm run test",
     "quality": "npm run prettier:lint && npm run coverage",
-    "quality:nonstrict": "npm run prettier && npm run coverage"
+    "quality:nonstrict": "npm run prettier && npm run coverage",
+    "process-markdown": "node ./src/processMarkdown.js"
   },
   "author": "Thoughtworks",
   "repository": {

@@ -4,7 +4,7 @@ const matter = require('gray-matter')
 const markdown = require('markdown-it')()
 
 const baseDirectory = './tech-radar-source/'
-const outputJSONFilename = 'tech-radar-source.json'
+const outputJSONFilename = 'src/tech-radar-source.json'
 
 const processMarkdown = () => {
   fs.readdir(baseDirectory, {}, (error, files) => {
@@ -25,7 +25,7 @@ const processMarkdown = () => {
       [],
     )
 
-    fs.writeFile(`${baseDirectory}${outputJSONFilename}`, JSON.stringify(techRadarReadyList), () => {})
+    fs.writeFile(`${outputJSONFilename}`, JSON.stringify(techRadarReadyList), () => {})
   })
 }
 console.log(processMarkdown())
