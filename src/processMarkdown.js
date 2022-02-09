@@ -4,7 +4,7 @@ const matter = require('gray-matter')
 const markdown = require('markdown-it')()
 
 const baseDirectory = './tech-radar-source/'
-const outputJSONFilename = 'src/tech-radar-source.json'
+const outputJSONFilename = 'dist/tech-radar-source.json'
 
 const processMarkdown = () => {
   fs.readdir(baseDirectory, {}, (error, files) => {
@@ -17,7 +17,7 @@ const processMarkdown = () => {
             name,
             ring,
             quadrant,
-            isNew,
+            isNew: isNew.toString().toUpperCase(),
             description: markdown.render(content),
           },
         ]
