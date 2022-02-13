@@ -32,4 +32,12 @@ jobs:
         
       - name: Process content
         run: npx pnpm run process-markdown
+        
+      - name: Deploy to Surge
+        uses: dswistowski/surge-sh-action@v1
+        with:
+          domain: ${{ secrets.hostname }}
+          project: './dist/'
+          login: ${{ secrets.surge_login }}
+          token: ${{ secrets.surge_token }}
 
