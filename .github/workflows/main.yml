@@ -25,11 +25,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install
-        run: pnpm i
+        run: npx pnpm i
       
       - name: Build
-        run: pnpm run build
+        run: npx pnpm run build
         
       - name: Process content
-        run: pnpm run process-markdown
+        run: npx pnpm run process-markdown
 
