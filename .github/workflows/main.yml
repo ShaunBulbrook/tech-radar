@@ -36,8 +36,8 @@ jobs:
       - name: Deploy to Surge
         uses: dswistowski/surge-sh-action@v1
         with:
-          domain: ${{ secrets.hostname }}
+          domain: ${{ secrets.HOSTNAME }}
           project: 'dist'
-          login: ${{ secrets.surge_login }}
-          token: ${{ secrets.surge_token }}
+          login: ${{ secrets.SURGE_LOGIN }}
+          token: ${{ secrets.SURGE_TOKEN }}
 
