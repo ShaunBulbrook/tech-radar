@@ -6,7 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -26,18 +26,17 @@ jobs:
       # Runs a single command using the runners shell
       - name: Install
         run: npx pnpm i
-      
+
       - name: Build
         run: npx pnpm run build
-        
+
       - name: Process content
         run: npx pnpm run process-markdown
-        
+
       - name: Deploy to Surge
         uses: dswistowski/surge-sh-action@v1
         with:
-          domain: ${{ secrets.HOSTNAME }}
+          domain: ${{ secrets.hostname }}
           project: 'dist'
-          login: ${{ secrets.SURGE_LOGIN }}
-          token: ${{ secrets.SURGE_TOKEN }}
-
+          login: ${{ secrets.surge_login }}
+          token: ${{ secrets.surge_token }}
