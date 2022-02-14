@@ -569,7 +569,7 @@ const Radar = function (size, radar) {
       .attr('class', 'footer-content')
       .append('p')
       .html(
-        'Created with <a href="https://github.com/ShaunBulbrook/tech-radar">https://github.com/ShaunBulbrook/tech-radar</a>' +
+        '<p>Created with <a href="https://github.com/ShaunBulbrook/tech-radar">https://github.com/ShaunBulbrook/tech-radar</a></p>'
       )
   }
 
