@@ -19,7 +19,6 @@
     "process-markdown": "node ./src/processMarkdown.js",
     "preview-dist": "npx http-server ./dist"
   },
-  "author": "Thoughtworks",
   "repository": {
     "type": "git",
     "url": "https://github.com/thoughtworks/build-your-own-radar"
@@ -34,7 +33,6 @@
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
     "cssnano": "^5.0.15",
-    "cypress": "^9.3.1",
     "dotenv": "^14.2.0",
     "expose-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
