@@ -247,6 +247,8 @@ body {
     }
 
     div.quadrant-table {
+      position: relative;
+      z-index: 1;
       .quadrant-table__name {
         display: none;
       }
