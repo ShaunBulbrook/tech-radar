@@ -1,14 +1,14 @@
-@import 'colors';
-@import 'fonts';
-@import 'tip';
-@import 'form';
-@import 'error';
-@import 'header';
-@import 'footer';
+@import "colors";
+@import "fonts";
+@import "tip";
+@import "form";
+@import "error";
+@import "header";
+@import "footer";
 @import url(https://www.thoughtworks.com/css/k8s_production/screen.css);
 
 body {
-  font: 18px 'Open Sans';
+  font: 18px "Open Sans";
   -webkit-font-smoothing: antialiased;
   margin: 0;
 }
@@ -26,7 +26,7 @@ body {
   }
 
   a:after {
-    content: ' <' attr(href) '> ';
+    content: " <" attr(href) "> ";
     font-size: 0.8em;
     font-weight: normal;
   }
@@ -174,22 +174,22 @@ body {
       path {
         &.ring-arc-3 {
           stroke: none;
-          fill: $grey-light;
+          fill: $pink-25;
         }
 
         &.ring-arc-2 {
           stroke: none;
-          fill: $grey;
+          fill: $pink-50;
         }
 
         &.ring-arc-1 {
           stroke: none;
-          fill: $grey-dark;
+          fill: $pink-75;
         }
 
         &.ring-arc-0 {
           stroke: none;
-          fill: $grey-darkest;
+          fill: $pink;
         }
       }
 
@@ -206,41 +206,41 @@ body {
       polygon,
       path {
         &.first {
-          fill: $green;
+          fill: #eda518;
           stroke: none;
         }
 
         &.second {
-          fill: $blue;
+          fill: #eda518;
           stroke: none;
         }
 
         &.third {
-          fill: $orange;
+          fill: #eda518;
           stroke: none;
         }
 
         &.fourth {
-          fill: $violet;
+          fill: #eda518;
           stroke: none;
         }
       }
 
       line {
-        stroke: white;
+        stroke: black;
       }
 
       text {
         &.blip-text {
-          font-size: 9px;
           font-style: italic;
-          fill: $white;
+          fill: black;
+          font-weight: bold;
         }
 
         &.line-text {
           font-weight: bold;
           text-transform: uppercase;
-          fill: $black;
+          fill: white;
           font-size: 7px;
         }
       }
@@ -341,5 +341,13 @@ body {
         }
       }
     }
+  }
+}
+
+.ui-autocomplete {
+  background: black;
+  li,
+  div {
+    color: white;
   }
 }

@@ -319,7 +319,7 @@ const Radar = function (size, radar) {
       .attr('y', y + 4)
       .attr('class', 'blip-text')
       // derive font-size from current blip width
-      .style('font-size', (blip.width * 10) / 22 + 'px')
+      .style('font-size', (blip.width * 10) / 20 + 'px')
       .attr('text-anchor', 'middle')
       .text(blip.number())
 
@@ -569,7 +569,7 @@ const Radar = function (size, radar) {
       .attr('class', 'footer-content')
       .append('p')
       .html(
-        '<p>Created with <a href="https://github.com/ShaunBulbrook/tech-radar">https://github.com/ShaunBulbrook/tech-radar</a></p>'
+        '<p>Created with <a href="https://github.com/ShaunBulbrook/tech-radar">https://github.com/ShaunBulbrook/tech-radar</a></p>',
       )
   }
 
