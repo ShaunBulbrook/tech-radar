@@ -220,6 +220,10 @@ body {
         &.third {
           fill: $orange;
           stroke: none;
+
+          + .blip-text {
+            fill: $black;
+          }
         }
 
         &.fourth {
@@ -235,7 +239,7 @@ body {
       text {
         &.blip-text {
           font-style: italic;
-          fill: black;
+          fill: $white;
           font-weight: bold;
         }
 
