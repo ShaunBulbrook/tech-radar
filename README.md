@@ -2,8 +2,6 @@
 
 An extension of the the [thoughtworks build your own radar](https://github.com/thoughtworks/build-your-own-radar) project. This project template aims to see if staff might engage with and maintain a tech radar where the content is managed with markdown files in the repository.
 
-If yes, it's likely that this will be re-written. - Use at your own risk.
-
 Using this template, you should be able to maintain your library of tech radar items inside the [tech-radar-source](https://github.com/ShaunBulbrook/tech-radar/tree/main/tech-radar-source) folder. On commit, these will be built into a JSON file that can be parsed into a tech radar.
 
 ## How To Author items
