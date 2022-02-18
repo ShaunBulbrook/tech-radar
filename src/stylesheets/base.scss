@@ -208,22 +208,22 @@ body {
       polygon,
       path {
         &.first {
-          fill: #eda518;
+          fill: $green;
           stroke: none;
         }
 
         &.second {
-          fill: #eda518;
+          fill: $blue;
           stroke: none;
         }
 
         &.third {
-          fill: #eda518;
+          fill: $orange;
           stroke: none;
         }
 
         &.fourth {
-          fill: #eda518;
+          fill: $violet;
           stroke: none;
         }
       }
